@@ -5,7 +5,8 @@ This allows development in phoenix using docker
 1. Install Docker on your computer.
 2. Download develop.sh, pause.sh, and clean.sh
 3. Run develop.sh from the desired development directory. Files from this directory will be accessible in the /app folder of the elixir container.
-4. Run pause.sh to stop the containers, or clean.sh to remove all created networks and containers
+4. Before running mix phx.server change the hostname in config/dev.exs from localhost to db
+5. Run pause.sh to stop the containers, or clean.sh to remove all created networks and containers
 
 # Bash Script Contents
 You can also copy these commands to test them out
