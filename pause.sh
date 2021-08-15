@@ -1,0 +1,1 @@
+docker container stop db elixir

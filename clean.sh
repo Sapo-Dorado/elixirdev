@@ -1,2 +1,3 @@
-docker container stop db ElixirDev
-docker container rm db ElixirDev
+docker container stop db elixir
+docker container rm db elixir
+docker network rm elixirdev
