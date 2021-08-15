@@ -18,15 +18,17 @@ docker container run -d --name db --net elixirdev --env POSTGRES_PASSWORD=postgr
 docker container run -it --name elixir --net elixirdev -p 4000:4000 --mount type=bind,source="$(pwd)"/,target=/app sapodorado/elixirdev
 ```
 
+pause.sh
+```
+docker container stop db elixir
+```
+
 unpause.sh
 ```
 docker container start db elixir
 docker exec -it elixir bash
 ```
-pause.sh
-```
-docker container stop db elixir
-```
+
 
 clean.sh
 ```
