@@ -1,0 +1,2 @@
+docker container run --name db -d --env POSTGRES_PASSWORD=postgres postgres:13.3
+docker container run --name ElixirDev -itp 4000:4000 --mount type=bind,source="$(pwd)"/,target=/app sapodorado/elixirdev
