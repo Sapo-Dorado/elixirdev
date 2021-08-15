@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM elixir:1.10.3
+FROM elixir:1.12.2
 
 RUN mix local.hex --force && \
     mix local.rebar --force && \
